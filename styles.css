@@ -57,3 +57,42 @@ footer .logo>img{width:150px;height:105px}
  .hero{height:auto;grid-template-columns:1fr}.hero h1{font-size:15vw;white-space:normal}.hero .intro{width:auto}.hero-image{min-height:72vh}.seal{left:4%;width:230px;height:300px}.hero-image>p{bottom:28px}
 }
 @media(max-width:560px){.logo-cowgirl{width:58px}.logo-cowgirl img{width:75px!important;height:75px!important;left:-9px}.header>.logo b{font-size:17px}.header>.logo small{font-size:8px}}
+
+/* Hero refinement: approved oversized emblem and wall script */
+@media(min-width:901px){
+  .seal{
+    left:-3.5%;
+    top:50%;
+    width:430px;
+    height:430px;
+    opacity:.43;
+    z-index:2;
+    pointer-events:none;
+  }
+  .seal img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    filter:sepia(.18) saturate(.7) contrast(.9);
+  }
+  .hero-image>p{
+    top:82px;
+    right:30px;
+    bottom:auto;
+    width:165px;
+    font-size:42px;
+    line-height:.82;
+    color:#dda3a1;
+    text-align:center;
+    transform:rotate(-7deg);
+    text-shadow:0 3px 18px rgba(25,15,16,.8);
+  }
+}
+@media(min-width:901px) and (max-width:1180px){
+  .seal{left:-7%;width:355px;height:390px}
+  .hero-image>p{right:18px;width:130px;font-size:34px}
+}
+@media(max-width:900px){
+  .seal{width:300px;height:350px;left:2%;opacity:.4}
+  .hero-image>p{top:35px;right:20px;bottom:auto;width:145px;font-size:35px;text-align:center}
+}
