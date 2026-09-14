@@ -24,3 +24,36 @@ footer .logo>img{width:150px;height:105px}
   .logo>img{width:105px;height:58px}
   .seal{width:210px;height:270px}
 }
+
+/* Exact approved top-section composition */
+.header{height:84px;padding:0 50px;grid-template-columns:335px 1fr;background:#281b1c}
+.header>.logo{height:84px;gap:8px}
+.header>.logo>img{display:none}
+.logo-cowgirl{display:block!important;width:105px;height:78px;overflow:hidden;position:relative;flex:none}
+.logo-cowgirl img{display:block!important;position:absolute;width:112px!important;height:112px!important;max-width:none;object-fit:contain;left:-3px;top:-4px}
+.header>.logo>span:last-child{display:flex!important;align-items:center}
+.header>.logo b{font:400 30px/.95 var(--western);letter-spacing:.07em;color:var(--rose)}
+.header>.logo small{font:400 14px/1 var(--western);letter-spacing:.08em;color:var(--rose);margin-top:4px}
+.header>.logo em{font:400 5px/1 var(--sans);letter-spacing:.32em;color:rgba(216,156,155,.65);margin-top:7px}
+.header nav{width:100%;justify-content:flex-end;gap:45px}
+.header nav .book.small{margin-left:auto;width:250px;height:48px}
+.hero{height:438px;grid-template-columns:31% 69%}
+.hero-copy{padding:48px 3.6vw 24px;z-index:4}
+.hero-copy .overline{margin-bottom:18px;white-space:nowrap}
+.hero h1{font-size:56px;line-height:.98;white-space:nowrap;margin-bottom:14px}
+.hero .intro{width:355px;font-size:12px;line-height:1.65;margin-bottom:16px}
+.hero .book{width:258px;height:46px;padding:0 28px;justify-content:space-between}
+.hero .micro{margin-top:18px;white-space:nowrap}
+.hero-image{min-height:0}
+.hero-image>img{object-position:56% 34%;filter:saturate(.65) sepia(.14) contrast(1.08)}
+.hero-image:after{background:linear-gradient(90deg,#332223 0,rgba(51,34,35,.7) 17%,transparent 43%),linear-gradient(0deg,rgba(25,15,16,.15),transparent 45%)}
+.seal{left:0;top:51%;width:335px;height:405px;opacity:.31;z-index:2}
+.hero-image>p{right:24px;bottom:105px;font-size:31px}
+@media(min-width:901px) and (max-width:1180px){
+ .header{padding:0 25px;grid-template-columns:280px 1fr}.header nav{gap:24px}.header nav .book.small{width:210px}.hero{grid-template-columns:38% 62%}.hero h1{font-size:50px}.seal{width:280px}
+}
+@media(max-width:900px){
+ .header{height:72px;padding:0 18px;display:flex}.header>.logo{height:72px}.logo-cowgirl{width:72px;height:67px}.logo-cowgirl img{width:84px!important;height:84px!important;left:-6px;top:0}.header>.logo b{font-size:20px}.header>.logo small{font-size:9px}.header>.logo em{display:none}
+ .hero{height:auto;grid-template-columns:1fr}.hero h1{font-size:15vw;white-space:normal}.hero .intro{width:auto}.hero-image{min-height:72vh}.seal{left:4%;width:230px;height:300px}.hero-image>p{bottom:28px}
+}
+@media(max-width:560px){.logo-cowgirl{width:58px}.logo-cowgirl img{width:75px!important;height:75px!important;left:-9px}.header>.logo b{font-size:17px}.header>.logo small{font-size:8px}}
